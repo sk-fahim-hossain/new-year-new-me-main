@@ -89,74 +89,166 @@ header {
     font-weight: 700;
 }
 
-.my-plan-title{
+.my-plan-title {
     text-align: center;
     margin-top: 130px;
     margin-bottom: 50px;
 }
+
 .single-plan-sub-title {
     font-size: 25px;
-    color: #737272;;
+    color: #737272;
+    ;
 }
+
 /* 
 gradient part style */
 
-.gradient-part{
+.gradient-part {
     margin-top: 130px;
     border-radius: 8px;
-    padding:60px 64px ;
+    padding: 60px 64px;
     /* background:linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%); */
-    
+
     margin-bottom: 130px;
-    background-image:url('./images/watch.png'),url('./images/gradient1.png');
+    background-image: url('./images/watch.png'), url('./images/gradient1.png');
     background-size: cover;
-    
+
 }
-.gradient-title{
-   color: #fff;
+
+.gradient-title {
+    color: #fff;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 24px;
 }
-.gradient-btn{
+
+.gradient-btn {
     padding: 21px 36px;
     background-color: #ffff;
-    color:#F15B22;
+    color: #F15B22;
     border: none;
     border-radius: 5px;
 }
 
 /* footer styles */
-footer{
+footer {
     background-color: black;
     color: white;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     justify-content: space-between;
     padding: 130px 0px;
 }
-.social-content{}
-.footer-description{
+
+.social-content {}
+
+.footer-description {
     margin-top: 16px;
     width: 465px;
 }
-.social-icons{
+
+.social-icons {
     display: flex;
     gap: 10px;
 }
 
-.footer-form input[type=email]{
+.footer-form input[type=email] {
     margin-top: 10px;
     background-color: #0000;
     padding: 21px;
     border-radius: 5px;
 }
-.footer-form input[type=submit]{
-   color: #F15B22;
-   background-color: #ffff;
-   padding: 20px 36px;
-   border-radius: 5px;
-   display: block;
-   margin-top: 10px;
+
+.footer-form input[type=submit] {
+    color: #F15B22;
+    background-color: #ffff;
+    padding: 20px 36px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    section {
+        width: 100%;
+    }
+
+    .plans-container,
+    .previous-year-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px
+    }
+
+    .social-content>h2 {
+        font-size: 32px;
+    }
+
+    .footer-description {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .gradient-btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .gradient-part {
+        padding: 0;
+    }
+
+    .previous-year-img {
+        width: 100%;
+    }
+
+    .previous-year-info-content {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .gradient-title {
+        color: #fff;
+        font-size: 32px;
+        margin-bottom: 24px;
+        padding-left: 16px;
+        padding-top: 10px;
+    }
+
+    .banner-content {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .banner-title {
+        color: white;
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 65px;
+        padding: 20px;
+    }
+    .banner-content > .primary-btn{
+        margin: 0 auto;
+        display: block;
+    }
+    .banner-description {
+        padding: 20px;
+        margin-bottom: 50px;
+    }
 }
